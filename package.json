@@ -1,0 +1,10 @@
+{
+  "name": "pchelp",
+  "version": "0.0.1",
+  "scripts": {
+    "scss": "sass --watch scss:css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.2"
+  }
+}
