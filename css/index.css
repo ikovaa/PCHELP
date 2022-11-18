@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-nav {
+
+html * {
     font-family: 'Poppins', sans-serif;
+}
+nav {
     font-weight: 500;
 }
 
 .row {
-    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -20,5 +22,5 @@ nav {
 
 .link-unstyled, .link-unstyled:link, .link-unstyled:hover {
     color: inherit;
-    text-decoration: inherit;
+    /* text-decoration: inherit; */
 }
