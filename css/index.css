@@ -13,3 +13,7 @@ nav {
 .card {
     border: none;
 }
+
+.navbar-nav {
+    margin-left: auto;
+}
