@@ -25,7 +25,7 @@
     <meta name="description" content="Base Solutions, Lda">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="border-bottom: 1px solid black; background-color: black;">
             <div class="container-fluid">
                 <a class="navbar-brand mx-2" href="/">
                     <img src="images/logofinal.gif" width="200" class="d-inline-block align-text-top">
@@ -35,12 +35,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse mx-2" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="/">Home</a>
-                        <a class="nav-link" href="/services.html">Serviços</a>
-                        <a class="nav-link active" aria-current="page" href="/contacts.html">Contactos</a>
-                        <a class="nav-link" href="/">FAQ</a>
-                    </div>
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/aboutus.html">PChelp</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Serviços
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="/services.html#technical_assist">Assistência Técnica</a></li>
+                                <li><a class="dropdown-item" href="/services.html#repair">Reparação</a></li>
+                                <li><a class="dropdown-item" href="/services.html#equipments">Equipamentos</a></li>
+                                <li><a class="dropdown-item" href="/services.html#consumables">Consumíveis</a></li>
+                                <li><a class="dropdown-item" href="/services.html#programs">Programas</a></li>
+                                <li><a class="dropdown-item" href="/services.html#webdesign">Web Design</a></li>
+                                <li><a class="dropdown-item" href="/services.html#conversion">Conversão de Cassetes</a></li>
+                                <li><a class="dropdown-item" href="/services.html#photocopies">Cópias, Scan, FAX e Email</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/contacts.html">Contactos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">FAQ</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

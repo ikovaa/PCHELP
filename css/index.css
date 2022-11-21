@@ -4,6 +4,30 @@
 html * {
     font-family: 'Poppins', sans-serif;
 }
+
+.text-justify {
+    text-indent: 2rem;
+    text-align: justify;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover{
+  	background: rgba(0,0,0,0.4);
+}
+::-webkit-scrollbar-thumb:active{
+  	background: rgba(0,0,0,.9);
+}
 nav {
     font-weight: 500;
     box-shadow: 0px 1px 10px #000;
@@ -30,4 +54,13 @@ nav {
 .link-unstyled, .link-unstyled:link, .link-unstyled:hover {
     color: inherit;
     /* text-decoration: inherit; */
+}
+
+
+.img-zoom {
+    transition: 0.6s;
+}
+
+.img-zoom:hover {
+    transform: scale(1.2);
 }
