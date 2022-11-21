@@ -106,11 +106,21 @@
                     <h6 class="text-uppercase fw-bold fs-4">Fale connosco</h6>
                     <hr>
                     <form>
-                        <div class="form-floating mb-1 mb-lg-4">
+                        <div class="form-floating mb-1 mb-lg-3">
                             <input type="text" class="form-control" id="nameInput" placeholder="PCHELP">
                             <label for="nameInput">Nome</label>
                         </div>
-                        <div class="row g-2">
+                        <div class="hstack gap-lg-3 gap-1 mb-1 mb-lg-3">
+                            <div class="form-floating col">
+                                <input type="email" class="form-control" id="emailInput" placeholder="pchelp@basesolutions.pt">
+                                <label for="emailInput">Email</label>
+                            </div>
+                            <div class="form-floating col">
+                                <input type="text" class="form-control" id="phoneInput" placeholder="+351 212 303 147">
+                                <label for="phoneInput">Telefone</label>
+                            </div>
+                        </div>
+                        <!-- <div class="row g-2">
                             <div class="col-md mb-0 mb-lg-4">
                                 <div class="form-floating">
                                     <input type="email" class="form-control" id="emailInput" placeholder="pchelp@basesolutions.pt">
@@ -123,8 +133,8 @@
                                     <label for="phoneInput">Telefone</label>
                                 </div>
                             </div>
-                        </div>
-                        <div class="form-group mb-0 mb-lg-4">
+                        </div>-->
+                        <div class="form-group mb-0 mb-lg-2">
                             <textarea class="form-control" rows="5" id="comment" placeholder="Mensagem a enviar"></textarea>
                         </div>
                         <div class="form-check mb-1 mb-lg-4">

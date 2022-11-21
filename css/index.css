@@ -8,6 +8,10 @@ nav {
     font-weight: 500;
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
 .row {
     font-weight: 400;
 }
