@@ -85,6 +85,17 @@ nav {
     animation: fade 2s ease;
 }
 
+.anchor-offset {
+    display: block;
+    position: relative;
+    top: -9rem;
+    visibility: hidden;
+}
+
+.border-none {
+    border: none;
+}
+
 @keyframes fade {
     from {
         opacity: 0;
