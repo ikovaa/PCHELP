@@ -27,6 +27,7 @@ html * {
 ::-webkit-scrollbar-thumb:active{
   	background: rgba(0,0,0,.9);
 }
+
 nav {
     font-weight: 500;
     box-shadow: 0px 1px 10px #000;
@@ -86,12 +87,16 @@ nav {
 .anchor-offset {
     display: block;
     position: relative;
-    top: -9rem;
+    top: -25%;
     visibility: hidden;
 }
 
 .border-none {
     border: none;
+}
+
+#scrolltopBtn {
+    border: 2px solid black
 }
 
 
