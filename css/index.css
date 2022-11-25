@@ -3,7 +3,6 @@
 
 * {
     font-family: 'Poppins', sans-serif;
-
 }
 html {
     scroll-padding-top: var(--scroll-padding, 50px);
