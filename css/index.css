@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 
+/* Root */
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -9,15 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+/*  */
 
-/* section {
-    scroll-margin-top: 4rem;
-} */
 
-.text-justify {
-    text-align: justify;
-}
-
+/* Scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -36,13 +33,23 @@ html {
 ::-webkit-scrollbar-thumb:active{
   	background: rgba(0,0,0,.9);
 }
+/* Scrollbar */
 
+
+/* Nav */
 nav {
     font-weight: 500;
     box-shadow: 0px 1px 10px #000;
     border-bottom: 1px solid black;
     background-color: black;
 }
+
+.navbar-nav {
+    margin-left: auto;
+}
+/* Nav */
+
+/* Horizontal Under Line */
 
 .h-ul {
     border-bottom:1px solid rgba(0, 0, 0, 0.4);
@@ -51,28 +58,17 @@ nav {
     padding-bottom:3px;
 }
 
+/* Justify Text */
+.text-justify {
+    text-align: justify;
+}
+
 
 .selector-for-some-widget {
     box-sizing: content-box;
 }
 
-.row {
-    font-weight: 400;
-}
-
-.card {
-    border: none;
-}
-
-.navbar-nav {
-    margin-left: auto;
-}
-
-.link-unstyled, .link-unstyled:link, .link-unstyled:hover {
-    color: inherit;
-    /* text-decoration: inherit; */
-}
-
+/* Image Effects */
 .img-zoom {
     transition: 0.6s;
 }
@@ -88,7 +84,17 @@ nav {
 .img-zoom-small:hover {
     transform: scale(1.1);
 }
+/* Image Effects */
 
+
+
+/* Border None */
+.border-none {
+    border: none;
+}
+
+
+/* Animations Effects */
 .anim-up {
     transition: 1s;
 }
@@ -101,22 +107,6 @@ nav {
     animation: fade 2s ease;
 }
 
-.anchor-offset {
-    display: block;
-    position: relative;
-    top: -25%;
-    visibility: hidden;
-}
-
-.border-none {
-    border: none;
-}
-
-#scrolltopBtn {
-    border: 2px solid black
-}
-
-
 @keyframes fade {
     from {
         opacity: 0;
@@ -124,4 +114,33 @@ nav {
     to {
         opacity: 1;
     }
+}
+
+/* Animation Effects */
+
+
+
+#scrolltopBtn {
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.text-decoration-none {
+    text-decoration: underline;
+}
+
+.under:hover {
+    text-decoration: underline;
+}
+
+iframe {
+    width: 100%    !important;
+    height: auto   !important;
 }
