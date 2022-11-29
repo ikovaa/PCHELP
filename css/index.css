@@ -45,30 +45,12 @@ nav {
     font-weight: 500;
     box-shadow: 0px 1px 10px #000;
     /* border-bottom: 1px solid black; */
-    background-color: #161819 !important;
-}
-
-.navbar-nav {
-    margin-left: auto;
 }
 /* Nav */
 
 /* Footer */
-footer {
-    background-color: #161819 !important;
-    font-size: 0.8rem;
-    color:rgba(255, 255, 255, 0.55) !important;
-    transition: 0.15s ease-in-out;
-
-
-}
-footer p {
-    color:rgba(255, 255, 255, 0.55) !important;
-}
 footer a {
-    color:rgba(255, 255, 255, 0.55) !important;
     transition: 0.15s ease-in-out;
-    text-decoration: none !important;
 }
 footer a:hover {
     color:#FECC01 !important;
@@ -129,7 +111,6 @@ footer a:hover {
     border: none;
 }
 
-
 /* Animations Effects */
 .anim-up {
     transition: 1s;
@@ -143,6 +124,15 @@ footer a:hover {
     animation: fade 2s ease;
 }
 
+.dropdown-item:active {
+    color:white !important;
+    background-color: #FECC01 !important;
+}
+
+.dropdown-item:hover {
+    color: #000 !important;
+}
+
 @keyframes fade {
     from {
         opacity: 0;
@@ -154,29 +144,11 @@ footer a:hover {
 
 /* Animation Effects */
 
-
-
 #scrolltopBtn {
     border: 2px solid black;
 }
 
-a {
-    text-decoration: none;
-}
-
-nav a:hover {
-    color:#FECC01 !important;
-}
-
-.text-decoration-none {
-    text-decoration: underline;
-}
-
-.under:hover {
-    text-decoration: underline;
-}
-
 iframe {
-    width: 100%    !important;
-    height: auto   !important;
+    width: 100% !important;
+    height: auto !important;
 }
