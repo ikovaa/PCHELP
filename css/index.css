@@ -13,6 +13,7 @@ html {
 
 body {
     background-color: #F7F8FC;
+    overflow-x: hidden;
 }
 
 /* Main */
@@ -120,10 +121,6 @@ footer a:hover {
     transform: translateY(-10px);
 }
 
-.fade-in {
-    animation: fade 2s ease;
-}
-
 .dropdown-item:active {
     color:white !important;
     background-color: #FECC01 !important;
@@ -131,15 +128,6 @@ footer a:hover {
 
 .dropdown-item:hover {
     color: #000 !important;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 /* Animation Effects */
