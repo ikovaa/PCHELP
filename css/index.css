@@ -11,6 +11,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
 body {
     background-color: #F7F8FC;
     overflow-x: hidden;

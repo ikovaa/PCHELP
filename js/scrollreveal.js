@@ -1,14 +1,13 @@
 ScrollReveal({ reset: true });
 
 ScrollReveal().reveal(".show-once", {
+    move: 0,
     reset: false
 });
 
-
-
 // Fade
 ScrollReveal().reveal(".fade-in-section", {
-    duration: 2000,
+    duration: 1000,
     move: 0,
     reset: false,
 });
@@ -59,10 +58,11 @@ ScrollReveal().reveal(".slide-up-title", {
     origin: "bottom",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
-    rotate: {
-        x: 20,
-        z: -10
-    },
+    // rotate: {
+    //     x: 20,
+    //     z: -10
+    // },
+    opacity: 0,
     reset: false,
 });
 
@@ -73,19 +73,20 @@ ScrollReveal().reveal(".slide-up-title-sec", {
     origin: "bottom",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
-    rotate: {
-        x: 20,
-        z: -10
-    },
+    // rotate: {
+    //     x: 20,
+    //     z: -10
+    // },
+    opacity: 0,
     reset: false,
 });
 
 
 // Slides
 ScrollReveal().reveal(".slide-right", {
-    useDelay: 'always',
-    delay: 500,
-    duration: 1000,
+    // useDelay: 'always',
+    // // delay: 500,
+    duration: 1500,
     origin: "left",
     distance: "2000px",
     easing: "ease-in-out",
@@ -94,9 +95,9 @@ ScrollReveal().reveal(".slide-right", {
 });
 
 ScrollReveal().reveal(".slide-left", {
-    useDelay: 'always',
-    delay: 500,
-    duration: 1000,
+    // useDelay: 'always',
+    // delay: 500,
+    duration: 1500,
     origin: "right",
     distance: "2000px",
     easing: "ease-in-out",
