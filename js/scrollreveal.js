@@ -20,6 +20,12 @@ ScrollReveal().reveal(".fade-in-text", {
     reset: false,
 });
 
+ScrollReveal().reveal(".fade-in-text-banner", {
+    duration: 1500,
+    move: 0,
+    reset: false,
+});
+
 
 
 // Title Slides
@@ -79,6 +85,19 @@ ScrollReveal().reveal(".slide-up-title-sec", {
     // },
     opacity: 0,
     reset: false,
+});
+
+ScrollReveal().reveal(".slide-up-title-banner", {
+    duration: 1000,
+    origin: "bottom",
+    distance: "50px",
+    easing: "cubic-bezier(0.5, 0, 0, 1)",
+    // rotate: {
+    //     x: 20,
+    //     z: -10
+    // },
+    opacity: 0,
+    reset: true,
 });
 
 

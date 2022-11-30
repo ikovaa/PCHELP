@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
     <head>
+        <!-- Title Tags -->
+        <title>PChelp - Reparação e Manutenção de Computadores, Lda</title>
+        <meta content="PChelp, Base, Solutions, Informática, Serviços, PC" name="keywords">
+        <meta content="Base Solutions, Lda" name="description">
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico">
+        <link href="/images/icon/favicon.ico" rel="apple-touch-icon">
+
+        <!-- Compatiblility -->
         <meta charset="UTF-8">
         <meta http-equiv="Content-Language" content="pt">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="icon" type="image/x-icon" href="/images/icon/favicon.ico">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
 
         <!-- Open Graph -->
         <meta property="og:title" content="PChelp - Reparação e Manutenção de Computadores, Lda" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://basesolutions.pt/" />
         <meta property="og:description" content="Base Solutions, Lda">
-        <meta property="og:image" content="http://127.0.0.1:5500/images/gerais/pchelp_logo.png" />
+        <meta property="og:image" content="http://basesolutions.pt/images/gerais/pchelp_logo.png" />
 
-        <!--  -->
-        <title>PChelp - Reparação e Manutenção de Computadores, Lda</title>
-        <meta name="keywords" content="PChelp Base Solutions Informática Serviços PC">
-        <meta name="description" content="Base Solutions, Lda">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="lib/css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-        <!-- Scroll Reveal -->
-        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <!-- JS Files -->
+        <script src="lib/js/scrollreveal.min.js"></script>
     </head>
     <body class="d-flex flex-column min-vh-100">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-md-top" style="background-color: #161819;">
@@ -75,20 +80,23 @@
 
 
         <div id="carouselBillboard" class="carousel slide" data-bs-ride="true"  data-interval="3000">
-            <div class="carousel-indicators"> <!--d-none d-md-inline-flex -->
+            <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner position-relative">
                 <div class="carousel-item active">
-                    <img src="images/banners/Banner_PcHELP5.png" class="d-block w-100" alt="PChelp Banner 1">
+                    <img src="/images/banners/Banner_PCHELP5.png" class="d-block w-100" alt="PChelp Banner 1">
+                    <p class="slide-up-title-banner banner-caption">Teste</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/banners/Banner_PcHELP4.png" class="d-block w-100" alt="PChelp Banner 2">
+                    <img src="/images/banners/Banner_PcHELP4.png" class="d-block w-100" alt="PChelp Banner 2">
+                    <p class="slide-up-title-banner banner-caption">Teste2</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/banners/Banner_PcHELP3.png" class="d-block w-100" alt="PChelp Banner3">
+                    <img src="/images/banners/Banner_PcHELP3.png" class="d-block w-100" alt="PChelp Banner3">
+                    <p class="slide-up-title-banner banner-caption">Teste3</p>
                 </div>
             </div>
         </div>
@@ -96,71 +104,65 @@
         <section>
             <div class="container-fluid text-center text-lg-start mt-3">
                 <div class="row">
-
-                    <div class="col-lg-1"></div>
-
-                    <div class="col-8 mx-auto mx-lg-none col-lg mb-3 mb-lg-0">
-                        <h6 class="text-uppercase fw-bold mb-3">PC HELP</h6>
-                        <hr>
-                        <p>
-                            <span class="fw-bold">18 anos de experiênca</span> em soluções informáticas para particulares e empresas.
-                        </p>
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 text-center text-lg-start">
+                                <h6 class="text-uppercase fw-bold mb-3">PC HELP</h6>
+                                <hr>
+                                <p>
+                                    <span class="fw-bold">18 anos de experiênca</span> em soluções informáticas para particulares e empresas.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center text-lg-start">
+                                <h6 class="text-uppercase fw-bold mb-3">Links</h6>
+                                <hr>
+                            </div>
+                            <div class="col-12 col-lg-4 text-center text-lg-start">
+                                <h6 class="text-uppercase fw-bold mb-3">Contactos</h6>
+                                <hr>
+                                <a class="text-reset text-decoration-none" href="tel:212303147">
+                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                        <div class="py-2">
+                                            <i class="bi bi-telephone-fill"></i>
+                                            <span>+351 212 303 147</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="text-reset text-decoration-none" href="tel:919706191">
+                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                        <div class="py-2">
+                                            <i class="bi bi-telephone-fill"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <span>+351 919 706 191</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="text-reset text-decoration-none" href="https://goo.gl/maps/kQZVMwcwCV5UwHeB9" target="_blank">
+                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                        <div class="py-2">
+                                            <i class="bi bi-geo-alt-fill"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            <span>Centro Comercial Parque I <br> Av.25 Abril, 27, Loja 25 <br> 2870-150 Montijo</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="text-reset text-decoration-none" href = "mailto: pchelp@basesolutions.pt">
+                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                        <div class="py-2">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </div>
+                                        <div class="p-2">
+                                            pchelp@basesolutions.pt
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="col-lg-1"></div>
-
-                    <div class="col-8 mx-auto mx-lg-none col-lg mb-3 mb-lg-0 lh-1">
-                        <h6 class="text-uppercase fw-bold mb-3">Links</h6>
-                        <hr>
-                    </div>
-
-                    <div class="col-lg-1"></div>
-
-                    <div class="col-8 mx-auto mx-lg-none col-lg mb-3 mb-lg-0 lh-1">
-                        <h6 class="text-uppercase fw-bold mb-3">Contactos</h6>
-                        <hr>
-                        <a class="text-reset text-decoration-none" href="tel:212303147">
-                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                <div class="py-2">
-                                    <i class="bi bi-telephone-fill"></i>
-                                    <span>+351 212 303 147</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="text-reset text-decoration-none" href="tel:919706191">
-                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                <div class="py-2">
-                                    <i class="bi bi-telephone-fill"></i>
-                                </div>
-                                <div class="p-2">
-                                    <span>+351 919 706 191</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="text-reset text-decoration-none" href="https://goo.gl/maps/kQZVMwcwCV5UwHeB9" target="_blank">
-                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                <div class="py-2">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </div>
-                                <div class="p-2">
-                                    <span>Centro Comercial Parque I <br> Av.25 Abril, 27, Loja 25 <br> 2870-150 Montijo</span>
-                                </div>
-                            </div>
-                        </a>
-                        <a class="text-reset text-decoration-none" href = "mailto: pchelp@basesolutions.pt">
-                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                <div class="py-2">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </div>
-                                <div class="p-2">
-                                    pchelp@basesolutions.pt
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-lg-1"></div>
-
+                    <div class="col-1"></div>
                 </div>
             </div>
         </section>
@@ -184,6 +186,7 @@
         </footer>
 
         <script src="/js/navbar.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+        <script src="/js/scrollreveal.js"></script>
+        <script src="/lib/js/bootstrap.js"></script>
     </body>
 </html>

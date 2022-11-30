@@ -51,7 +51,31 @@ nav {
     box-shadow: 0px 1px 10px #000;
     /* border-bottom: 1px solid black; */
 }
+
+nav a {
+    transition: 0.15s ease-in-out;
+}
+
+nav a:hover {
+    color:#FECC01 !important;
+}
 /* Nav */
+
+/* Banner */
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 5em;
+    opacity: 1;
+    font-family :Quicksand, sans-serif;
+}
+/* Banner */
 
 /* Footer */
 footer a {
