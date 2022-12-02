@@ -1,5 +1,44 @@
 ScrollReveal({ reset: true });
 
+var myCarousel = document.querySelector('#carouselBillboard')
+/*var carousel = new bootstrap.Carousel(myCarousel, {
+   interval: 2000,
+   wrap: false
+}) */
+
+const TextValues = {
+    '0': "Teste",
+    '1': "Teste1",
+    '2': "Teste3",
+}
+
+$( "#carouselBillboard" ).on( "slid.bs.carousel", function() {
+    setTimeout(function() {
+        var itemAtivo = $("#carouselBillboard.carousel-inner.active")
+        var itemAtivoOverlay = $("#carouselBillboard.carousel-inner.active.overlay")
+        if (itemAtivoOverlay) {
+            itemAtivoOverlay.append("<div>A sua tranquilidade é a nossa preocupação</div>");
+        }
+        console.log("Class Added")
+    }, 1000)
+
+
+
+    // Metodo para procurar pela classe que esta ativa
+
+
+    // Destruir o anterior da DOM totalmente para evitar erros visuais
+
+    // // Get Active Element
+    // var activeSlide = $(this).attr("class")
+    // if ( activeSlide ) {
+    //     console.log(activeSlide)
+    // } else {
+    //     console.log("teste")
+    //     return;
+    // }
+});
+
 ScrollReveal().reveal(".show-once", {
     move: 0,
     reset: false
