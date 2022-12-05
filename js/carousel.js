@@ -14,13 +14,13 @@ function browserDetect(){
 }
 
 $(document).ready(function() {
-    var browser = browserDetect()
-    if (browser == "Edge" || browser == "MS Edge") {
-        $(".carousel-text").each(function(index, elem) {
-            $(elem).css({"top": "50%", "opacity": "1"})
-        });
-        return
-    }
+    // var browser = browserDetect()
+    // if (browser == "Edge" || browser == "MS Edge") {
+    //     $(".carousel-text").each(function(index, elem) {
+    //         $(elem).css({"top": "50%", "opacity": "1"})
+    //     });
+    //     return
+    // }
     var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
 
     $(".carousel-text").each(function(index, elem) {
@@ -34,10 +34,10 @@ $(document).ready(function() {
 
 
 $("#carouselBillboard").on("slid.bs.carousel", function() {
-    var browser = browserDetect()
-    if (browser == "Edge" || browser == "MS Edge") {
-        return
-    }
+    // var browser = browserDetect()
+    // if (browser == "Edge" || browser == "MS Edge") {
+    //     return
+    // }
     var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
 
     $(".carousel-text").each(function(index, elem) {

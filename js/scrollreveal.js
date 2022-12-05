@@ -34,10 +34,10 @@ ScrollReveal().reveal(".slide-down-title", {
     origin: "top",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
-    rotate: {
-        x: 20,
-        z: -10
-    },
+    // rotate: {
+    //     x: 20,
+    //     z: -10
+    // },
     reset: false,
 });
 
@@ -48,10 +48,10 @@ ScrollReveal().reveal(".slide-down-title-sec", {
     origin: "top",
     distance: "400px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
-    rotate: {
-        x: 20,
-        z: -10
-    },
+    // rotate: {
+    //     x: 20,
+    //     z: -10
+    // },
     reset: false,
 });
 
