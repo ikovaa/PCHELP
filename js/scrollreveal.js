@@ -1,32 +1,5 @@
 ScrollReveal({ reset: true });
 
-var myCarousel = document.querySelector('#carouselBillboard')
-
-$(document).ready(function() {
-    var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
-
-    $(".carousel-text").each(function(index, elem) {
-        $(elem).animate({top: '100px'});
-        var id = ($(elem).attr('id').split('-'));
-        if (id[1] == currentSlideId[1]) {
-            $(elem).animate({top: '200px'});
-        }
-    });
-});
-
-
-$("#carouselBillboard").on("slid.bs.carousel", function() {
-    var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
-
-    $(".carousel-text").each(function(index, elem) {
-        $(elem).animate({top: '100px'});
-        var id = ($(elem).attr('id').split('-'));
-        if (id[1] == currentSlideId[1]) {
-            $(elem).animate({top: '200px'});
-        }
-    });
-});
-
 ScrollReveal().reveal(".show-once", {
     move: 0,
     reset: false
@@ -52,8 +25,6 @@ ScrollReveal().reveal(".fade-in-text-banner", {
     move: 0,
     reset: false,
 });
-
-
 
 // Title Slides
 ScrollReveal().reveal(".slide-down-title", {
