@@ -62,39 +62,25 @@ nav a:hover {
 /* Nav */
 
 /* Banner */
-.banner-caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin: 0;
-    padding: 0;
-    color: white;
-    font-weight: bold;
-    font-size: 5em;
-    opacity: 1;
-    font-family :Quicksand, sans-serif;
-}
 
 .carousel-overlay {
-    opacity: 1;
-    background-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-text {
+    position: absolute;
     color: white;
-}
-
-
-.carousel-overlay-element--hidden {
-    visibility: visible;
-    transition: opacity 0.5s;
-    opacity: 0;
-}
-
-
-.carousel-overlay-element {
-    visibility: hidden;
-    opacity: 1;
-    z-index: 1000;
-    color:white;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
 }
 
 /* Banner */

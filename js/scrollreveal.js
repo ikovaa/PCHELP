@@ -1,110 +1,31 @@
 ScrollReveal({ reset: true });
 
-function rewind () {
-  // Since we don't want the "forced reset" to happen
-  // immediately, let's wait a little...
-  setTimeout(function () {
+var myCarousel = document.querySelector('#carouselBillboard')
 
-    foobs.each(function (elem, index) {
-      // Remove the ScrollReveal data store id, which
-      // hides the element's history from ScrollReveal,
-      // and allows us to treat it as a new element
-      // moving forward.
-      elem.removeAttr('data-sr-id');
+$(document).ready(function() {
+    var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
 
-      // Remove the generated styles, added by ScrollReveal.
-      // If you have other styles in the style attribute,
-      // this still will be a bit more complicated.
-      elem.removeAttr('style');
-
-      // This is where we fade out our sequence using our
-      // class and CSS transition, but we must make sure to
-      // remove it before moving forward for best results...
-      elem.classList.add('foob--hidden');
-
-      // So using a timer, we remove it after our transition
-      // has completed, and now we're ready for a new
-      // ScrollReveal animation.
-      setTimeout(function () {
-        elem.classList.remove('foob--hidden');
-      }, 500); // this 500 matches the CSS transition duration.
-    })
-
-    // ScrollReveal's sync method will re-call all
-    // previously called reveals, which will happen after
-    // 2 seconds here to repeat the reveal sequence.
-    setTimeout(function () {
-      sr.sync();
-    }, 2000);
-
-  }, 2000);
-}
-
-
-$(document).ready(function(){
-    var activeItemId = 0
-    $('.carousel-item').each(function(i) {
-        if($(this).hasClass('active')) {
-            activeItemId = i
+    $(".carousel-text").each(function(index, elem) {
+        $(elem).animate({top: '100px'});
+        var id = ($(elem).attr('id').split('-'));
+        if (id[1] == currentSlideId[1]) {
+            $(elem).animate({top: '200px'});
         }
     });
-
-    $('.carousel-overlay-element').each(function(index, value) {
-        $(this).removeAttr('data-sr-id');
-        $(this).removeAttr('style');
-        $(this).addClass('carousel-overlay-element--hidden');
-
-        var overlayIdS = ($(this).attr('id')).split('-')
-
-        if (overlayIdS[1] == activeItemId) {
-            $(this).removeClass('carousel-overlay-element--hidden');
-        }
-
-        setTimeout(function () {
-            ScrollReveal().sync();
-        }, 2000);
-    })
-})
-
-
-$("#carouselBillboard" ).on( "slid.bs.carousel", function() {
-    var activeItemId = 0
-    $('.carousel-item').each(function(i) {
-        if($(this).hasClass('active')) {
-            activeItemId = i
-        }
-    });
-
-    $('.carousel-overlay-element').each(function(index, value) {
-        $(this).removeAttr('data-sr-id');
-        $(this).removeAttr('style');
-        $(this).addClass('carousel-overlay-element--hidden');
-
-        var overlayIdS = ($(this).attr('id')).split('-')
-
-        if (overlayIdS[1] == activeItemId) {
-            $(this).removeClass('carousel-overlay-element--hidden');
-        }
-
-        setTimeout(function () {
-            ScrollReveal().sync();
-        }, 2000);
-    })
 });
 
-// ScrollReveal().reveal('.banner-1', {
-//     useDelay: 'always',
-//     delay: 500,
-//     duration: 1000,
-//     origin: "top",
-//     distance: "50px",
-//     easing: "cubic-bezier(0.5, 0, 0, 1)",
-//     rotate: {
-//         x: 20,
-//         z: -10
-//     },
-//     reset: true,
-// });
+
+$("#carouselBillboard").on("slid.bs.carousel", function() {
+    var currentSlideId = ($(".carousel-item.active").attr('id')).split('-');
+
+    $(".carousel-text").each(function(index, elem) {
+        $(elem).animate({top: '100px'});
+        var id = ($(elem).attr('id').split('-'));
+        if (id[1] == currentSlideId[1]) {
+            $(elem).animate({top: '200px'});
+        }
+    });
+});
 
 ScrollReveal().reveal(".show-once", {
     move: 0,
