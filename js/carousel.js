@@ -1,4 +1,4 @@
-function browserDetect(){        
+function browserDetect(){
     var browserName = (function (agent) {switch (true) {
         case agent.indexOf("edge") > -1: return "MS Edge";
         case agent.indexOf("edg/") > -1: return "Edge";

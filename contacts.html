@@ -24,11 +24,14 @@
         <meta property="og:image" content="http://basesolutions.pt/images/gerais/pchelp_logo.png" />
 
         <!-- CSS Files -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reset.css" media="all">
+        <link rel="stylesheet" href="css/index.css" media="all">
         <link rel="stylesheet" href="lib/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
         <!-- JS Files -->
         <script src="lib/js/scrollreveal.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -36,8 +39,8 @@
     <body class="d-flex flex-column min-vh-100">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-md-top" style="background-color: #161819;">
             <div class="container-fluid">
-                <a class="navbar-brand mx-2" href="/">
-                    <img src="images/gerais/pchelp_navlogo.png" alt="PCHELP Logo" width="200" class="d-inline-block align-text-top">
+                <a class="navbar-brand mx-2" href="/" style="width: 200px;">
+                    <img src="images/gerais/pchelp_navlogo.png" alt="PCHELP Logo" class="img-fluid d-inline-block align-text-top" loading="lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -75,11 +78,11 @@
             </div>
         </nav>
 
-        <div class="container-fluid">
-            <section class="load-hidden">
+        <section class="load-hidden">
+            <div class="container-fluid">
                 <div class="row mt-lg-5">
                     <div class="col-1"></div>
-                    <div class="col-10 col-lg-3 mb-5 mt-5 p-4 bg-white slide-right" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <div class="col-10 col-lg-3 mb-3 mt-5 p-4 bg-white slide-right slide-right-contacts" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
                         <div class="row">
                             <div class="col-12">
                                 <h6 class="text-uppercase fw-bold fs-4">Contacte-nos</h6>
@@ -119,7 +122,7 @@
                             </div>
 
                             <div class="col-12 d-flex flex-row justify-content-center justify-content-lg-start responsive-iframe">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.434855423888!2d-8.978875385161004!3d38.707824065702304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193998fe414d57%3A0xf61bf5ab7aabaa79!2sPChelp%20-%20Repara%C3%A7%C3%A3o%20e%20Manuten%C3%A7%C3%A3o%20de%20Computadores%20-%20Base%20Solutions%2C%20Lda!5e0!3m2!1spt-PT!2spt!4v1669635510664!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.434855423888!2d-8.978875385161004!3d38.707824065702304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd193998fe414d57%3A0xf61bf5ab7aabaa79!2sPChelp%20-%20Repara%C3%A7%C3%A3o%20e%20Manuten%C3%A7%C3%A3o%20de%20Computadores%20-%20Base%20Solutions%2C%20Lda!5e0!3m2!1spt-PT!2spt!4v1669635510664!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -127,7 +130,7 @@
                     <div class="col-1"></div>
                     <div class="col-1 d-lg-none"></div>
 
-                    <div class="col-10 col-lg-6 mb-5 mt-5 p-4 bg-white slide-left" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
+                    <div class="col-10 col-lg-6 mb-5 mt-3 p-4 bg-white slide-left slide-left-contacts" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);">
                         <h6 class="text-uppercase fw-bold fs-4 ">Fale connosco</h6>
                         <hr>
                         <form>
@@ -159,8 +162,8 @@
                     </div>
                     <div class="col-1"></div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <footer class="mt-auto text-center text-white" style="background-color: #161819; font-size: 0.8rem; color:rgba(255, 255, 255, 0.55); transition: 0.15s ease-in-out;">
             <section>
@@ -175,7 +178,7 @@
             </section>
             <section>
                 <div class="p-1">
-                    <p style="color:rgba(255, 255, 255, 0.55)">Todos os direitos reservados © 2022 BaseSolutions Lda | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="/termsofservice.html#privacy">Política de Privacidade</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="termsofservice.html#litigation">Política de Litígios</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">Livro de Reclamações</a></p>
+                    <p style="color:rgba(255, 255, 255, 0.55)">Todos os direitos reservados © <span class="cyear"> <script>$('.cyear').html(new Date().getFullYear())</script> </span> BaseSolutions Lda | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="/termsofservice.html#privacy">Política de Privacidade</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="termsofservice.html#litigation">Política de Litígios</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">Livro de Reclamações</a></p>
                 </div>
             </section>
         </footer>

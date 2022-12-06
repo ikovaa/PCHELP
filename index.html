@@ -24,21 +24,23 @@
         <meta property="og:image" content="http://basesolutions.pt/images/gerais/pchelp_logo.png" />
 
         <!-- CSS Files -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/reset.css" media="all">
+        <link rel="stylesheet" href="css/index.css" media="all">
         <link rel="stylesheet" href="lib/css/bootstrap.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        
         <!-- JS Files -->
         <script src="lib/js/scrollreveal.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
     </head>
     <body class="d-flex flex-column min-vh-100 min-vw-100">
         <nav class="navbar navbar-expand-lg navbar-dark sticky-md-top" style="background-color: #161819;">
             <div class="container-fluid">
-                <a class="navbar-brand mx-2" href="/">
-                    <img src="images/gerais/pchelp_navlogo.png" alt="PCHELP Logo" width="200" class="d-inline-block align-text-top">
+                <a class="navbar-brand mx-2" href="/" style="width: 200px;">
+                    <img src="images/gerais/pchelp_navlogo.png" alt="PCHELP Logo" class="img-fluid d-inline-block align-text-top" loading="lazy" />
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -82,27 +84,30 @@
 
 
 
-        <div id="carouselBillboard" class="carousel slide" data-bs-ride="true"  data-interval="3000">
+        <div id="carouselBillboard" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselBillboard" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner position-relative">
-                <div class="carousel-item active position-relative" id="banner-0">
-                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/Banner_PCHELP5.png" alt="PChelp Banner 1">
+                <div class="carousel-item position-relative active" id="banner-0">
+                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/PChelp_banner1.png" alt="PChelp Banner 1" loading="lazy" />
+                    <img class="carousel-logo" src="/images/gerais/pchelp_navlogo.png" alt="" loading="lazy" />
                     <div class="carousel-overlay d-flex justify-content-center">
                         <div class="carousel-text display-4 text-center fw-bold text-justify text-shadow-black" id="text-0">Somos especialistas em assistência informática a particulares e empresas</div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" id="banner-1">
-                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/Banner_PcHELP4.png" alt="PChelp Banner 2">
+                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/PChelp_banner2.png" alt="PChelp Banner 2" loading="lazy" />
+                    <img class="carousel-logo" src="/images/gerais/pchelp_navlogo.png" alt="" loading="lazy" />
                     <div class="carousel-overlay d-flex justify-content-center">
-                        <div class="carousel-text display-4 text-center fw-bold text-justify text-shadow-black" id="text-1">Escolhe os teus componentes<br>Montamos a tua máquina</div>
+                        <div class="carousel-text display-4 text-center fw-bold text-justify text-shadow-black" id="text-1">Escolhe os teus componentes<br>Cria a tua própria máquina</div>
                     </div>
                 </div>
                 <div class="carousel-item position-relative" id="banner-2">
-                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/Banner_PcHELP3.png" alt="PChelp Banner3">
+                    <img class="carousel-image d-block w-100" style="filter: blur(1.5px) brightness(0.7);" src="/images/banners/PChelp_banner3.png" alt="PChelp Banner3" loading="lazy" />
+                    <img class="carousel-logo" src="/images/gerais/pchelp_navlogo.png" alt="" loading="lazy" />
                     <div class="carousel-overlay d-flex justify-content-center">
                         <div class="carousel-text display-4 text-center fw-bold text-justify text-shadow-black" id="text-2">Venda de soluções TI à medida de cada cliente</div>
                     </div>
@@ -122,58 +127,70 @@
                                 <h6 class="text-uppercase fw-bold mb-3">PC HELP</h6>
                                 <hr>
                                 <p>
-                                    <span class="fw-bold">18 anos de experiênca</span> em soluções informáticas para particulares e empresas.
+                                    <span class="fw-bold yoe-text">
+                                        <script>$( ".yoe-text" ).html(new Date().getFullYear() - 2004);</script>
+                                        anos de experiênca
+                                    </span>
+                                        em soluções informáticas para particulares e empresas.
                                 </p>
-                                <div style="width: 50%;">
-                                    <img src="/images/gerais/pchelp_microsoft.png" class="img-fluid" alt="PCHELP Microsoft Partner">
-
-                                </div>                            </div>
-                            <!-- <div class="col-12 col-lg-4 text-center text-lg-start">
-                                <h6 class="text-uppercase fw-bold mb-3">Links</h6>
-                                <hr>
-                            </div> -->
+                                <div class="w-50 mx-auto mx-lg-0">
+                                    <img src="/images/gerais/pchelp_microsoft.png" class="img-fluid" alt="PCHELP Microsoft Partner" loading="lazy" />
+                                </div>                            
+                            </div>
                             <div class="col-lg-2"></div>
                             <div class="col-12 col-lg-4 text-center text-lg-start">
                                 <h6 class="text-uppercase fw-bold mb-3">Contactos</h6>
                                 <hr>
-                                <a class="text-reset text-decoration-none" href="tel:212303147">
-                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                        <div class="py-2">
-                                            <i class="bi bi-telephone-fill"></i>
-                                            <span>+351 212 303 147</span>
-                                        </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a class="text-reset text-decoration-none" href="tel:212303147">
+                                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                                <div class="py-1">
+                                                    <i class="bi bi-telephone-fill"></i>
+                                                </div>
+                                                <div class="p-1">
+                                                    <span class="fw-bold">+351 212 303 147</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="text-reset text-decoration-none" href="tel:919706191">
-                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                        <div class="py-2">
-                                            <i class="bi bi-telephone-fill"></i>
-                                        </div>
-                                        <div class="p-2">
-                                            <span>+351 919 706 191</span>
-                                        </div>
+                                    <div class="col-6">
+                                        <a class="text-reset text-decoration-none" href="tel:919706191">
+                                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                                <div class="py-1">
+                                                    <i class="bi bi-telephone-fill"></i>
+                                                </div>
+                                                <div class="p-1">
+                                                    <span class="fw-bold">+351 919 706 191</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="text-reset text-decoration-none" href="https://goo.gl/maps/kQZVMwcwCV5UwHeB9" target="_blank">
-                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                        <div class="py-2">
-                                            <i class="bi bi-geo-alt-fill"></i>
-                                        </div>
-                                        <div class="p-2">
-                                            <span>Centro Comercial Parque I <br> Av.25 Abril, 27, Loja 25 <br> 2870-150 Montijo</span>
-                                        </div>
+                                    <div class="col-6">
+                                        <a class="text-reset text-decoration-none" href="https://goo.gl/maps/kQZVMwcwCV5UwHeB9" target="_blank">
+                                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                                <div class="py-2">
+                                                    <i class="bi bi-geo-alt-fill"></i>
+                                                </div>
+                                                <div class="p-2">
+                                                    <span>Centro Comercial Parque I <br> Av.25 Abril, 27, Loja 25 <br> 2870-150 Montijo</span>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                                <a class="text-reset text-decoration-none" href = "mailto: pchelp@basesolutions.pt">
-                                    <div class="d-flex flex-row justify-content-center justify-content-lg-start">
-                                        <div class="py-2">
-                                            <i class="bi bi-envelope-fill"></i>
-                                        </div>
-                                        <div class="p-2">
-                                            pchelp@basesolutions.pt
-                                        </div>
+                                    <div class="col-6">
+                                        <a class="text-reset text-decoration-none" href = "mailto: pchelp@basesolutions.pt">
+                                            <div class="d-flex flex-row justify-content-center justify-content-lg-start">
+                                                <div class="py-2">
+                                                    <i class="bi bi-envelope-fill"></i>
+                                                </div>
+                                                <div class="p-2">
+                                                    pchelp@basesolutions.pt
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                             <div class="col-lg-1"></div>
                         </div>
@@ -196,11 +213,18 @@
             </section>
             <section>
                 <div class="p-1">
-                    <p style="color:rgba(255, 255, 255, 0.55)">Todos os direitos reservados © 2022 BaseSolutions Lda | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="/termsofservice.html#privacy">Política de Privacidade</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="termsofservice.html#litigation">Política de Litígios</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">Livro de Reclamações</a></p>
+                    <p style="color:rgba(255, 255, 255, 0.55)">Todos os direitos reservados © <span class="cyear"> <script>$('.cyear').html(new Date().getFullYear())</script> </span> BaseSolutions Lda | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="/termsofservice.html#privacy">Política de Privacidade</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="termsofservice.html#litigation">Política de Litígios</a> | <a style="color:rgba(255, 255, 255, 0.75); text-decoration:none" href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">Livro de Reclamações</a></p>
                 </div>
             </section>
         </footer>
 
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $('.carousel').carousel({
+                interval: 5000
+              })
+            });
+        </script>
         <script src="/js/navbar.js"></script>
         <script src="/js/scrollreveal.js"></script>
         <script src="/js/carousel.js"></script>

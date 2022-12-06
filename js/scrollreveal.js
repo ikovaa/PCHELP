@@ -20,6 +20,14 @@ ScrollReveal().reveal(".fade-in-text", {
     reset: false,
 });
 
+ScrollReveal().reveal(".fade-in-image", {
+    useDelay: 'always',
+    delay: 1500,
+    duration: 2000,
+    move: 0,
+    reset: false,
+});
+
 ScrollReveal().reveal(".fade-in-text-banner", {
     duration: 1500,
     move: 0,
@@ -122,8 +130,17 @@ ScrollReveal().reveal(".slide-left", {
     reset: false,
 });
 
+ScrollReveal().reveal(".slide-right-contacts", {
+    move: 0,
+    reset: false,
+    mobile: true,
+});
 
-
+ScrollReveal().reveal(".slide-left-contacts", {
+    move: 0,
+    reset: false,
+    mobile: true,
+});
 
 ScrollReveal().reveal(".scaleUp", {
     duration: 4000,
