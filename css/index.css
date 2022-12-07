@@ -2,8 +2,12 @@
 
 
 /* Main */
+@font-face {
+    font-family: Poppins;
+    src: url(../lib/css/Poppins-Regular.ttf);
+}
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
 }
 html {
     scroll-padding-top: var(--scroll-padding, 50px);
