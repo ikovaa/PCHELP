@@ -7,29 +7,29 @@ ScrollReveal().reveal(".show-once", {
 
 // Fade
 ScrollReveal().reveal(".fade-in-section", {
-    duration: 1000,
+    duration: 800,
     move: 0,
     reset: false,
 });
 
 ScrollReveal().reveal(".fade-in-text", {
     useDelay: 'always',
-    delay: 1500,
-    duration: 2000,
+    delay: 800,
+    duration: 1500,
     move: 0,
     reset: false,
 });
 
 ScrollReveal().reveal(".fade-in-image", {
     useDelay: 'always',
-    delay: 1500,
-    duration: 2000,
+    delay: 800,
+    duration: 1500,
     move: 0,
     reset: false,
 });
 
 ScrollReveal().reveal(".fade-in-text-banner", {
-    duration: 1500,
+    duration: 1300,
     move: 0,
     reset: false,
 });
@@ -37,8 +37,8 @@ ScrollReveal().reveal(".fade-in-text-banner", {
 // Title Slides
 ScrollReveal().reveal(".slide-down-title", {
     useDelay: 'always',
-    delay: 500,
-    duration: 1000,
+    delay: 300,
+    duration: 800,
     origin: "top",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
@@ -51,8 +51,8 @@ ScrollReveal().reveal(".slide-down-title", {
 
 ScrollReveal().reveal(".slide-down-title-sec", {
     useDelay: 'always',
-    delay: 1500,
-    duration: 1000,
+    delay: 500,
+    duration: 800,
     origin: "top",
     distance: "400px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
@@ -65,8 +65,8 @@ ScrollReveal().reveal(".slide-down-title-sec", {
 
 ScrollReveal().reveal(".slide-up-title", {
     useDelay: 'once',
-    delay: 1000,
-    duration: 1000,
+    delay: 300,
+    duration: 800,
     origin: "bottom",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
@@ -80,8 +80,8 @@ ScrollReveal().reveal(".slide-up-title", {
 
 ScrollReveal().reveal(".slide-up-title-sec", {
     useDelay: 'always',
-    delay: 1500,
-    duration: 1000,
+    delay: 500,
+    duration: 800,
     origin: "bottom",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
@@ -94,7 +94,7 @@ ScrollReveal().reveal(".slide-up-title-sec", {
 });
 
 ScrollReveal().reveal(".slide-up-title-banner", {
-    duration: 1000,
+    duration: 800,
     origin: "bottom",
     distance: "50px",
     easing: "cubic-bezier(0.5, 0, 0, 1)",
@@ -111,7 +111,7 @@ ScrollReveal().reveal(".slide-up-title-banner", {
 ScrollReveal().reveal(".slide-right", {
     // useDelay: 'always',
     // // delay: 500,
-    duration: 1500,
+    duration: 800,
     origin: "left",
     distance: "2000px",
     easing: "ease-in-out",
@@ -122,7 +122,7 @@ ScrollReveal().reveal(".slide-right", {
 ScrollReveal().reveal(".slide-left", {
     // useDelay: 'always',
     // delay: 500,
-    duration: 1500,
+    duration: 800,
     origin: "right",
     distance: "2000px",
     easing: "ease-in-out",
@@ -143,13 +143,13 @@ ScrollReveal().reveal(".slide-left-contacts", {
 });
 
 ScrollReveal().reveal(".scaleUp", {
-    duration: 4000,
+    duration: 3000,
     scale: 0.85
 });
 
 ScrollReveal().reveal(".flip", {
-    delay: 500,
-    duration: 2000,
+    delay: 300,
+    duration: 1800,
     rotate: {
         x: 20,
         z: 20
